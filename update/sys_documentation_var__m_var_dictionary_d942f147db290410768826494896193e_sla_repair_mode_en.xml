@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="sla_repair_mode" label="SLA Repair Mode" language="en" table="var__m_var_dictionary_d942f147db290410768826494896193e">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>sla_repair_mode</element>
+            <help/>
+            <hint/>
+            <label>SLA Repair Mode</label>
+            <language>en</language>
+            <name>var__m_var_dictionary_d942f147db290410768826494896193e</name>
+            <plural>SLA Repair Mode</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rommelrey.budhi</sys_created_by>
+            <sys_created_on>2019-12-10 16:33:41</sys_created_on>
+            <sys_id>d9423547db290410768826494896196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>SLA Repair Mode</sys_name>
+            <sys_package display_value="8570 Compliance Application" source="x_snc_8570_complia">422c81c7db25001001bbaab35b961946</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+            <sys_update_name>sys_documentation_var__m_var_dictionary_d942f147db290410768826494896193e_sla_repair_mode_en</sys_update_name>
+            <sys_updated_by>rommelrey.budhi</sys_updated_by>
+            <sys_updated_on>2019-12-10 16:33:41</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

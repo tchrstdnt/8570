@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_snc_8570_complia_8570_certification" version="2" view="sys_ref_list">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="x_snc_8570_complia_8570_certification" element="NULL" name="x_snc_8570_complia_8570_certification" parent="NULL" relationship="NULL" sys_domain="global" view="68ab1061db210010da721b77489619aa">a6585503dba5001001bbaab35b9619c3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>rommelrey.budhi</sys_created_by>
+            <sys_created_on>2019-12-10 14:40:26</sys_created_on>
+            <sys_id>ea585503dba5001001bbaab35b9619c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rommelrey.budhi</sys_updated_by>
+            <sys_updated_on>2019-12-10 14:40:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_snc_8570_complia_8570_certification</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>rommelrey.budhi</sys_created_by>
+            <sys_created_on>2019-12-10 14:40:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a6585503dba5001001bbaab35b9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_8570_complia_8570_certification</sys_name>
+            <sys_package display_value="8570 Compliance Application" source="x_snc_8570_complia">422c81c7db25001001bbaab35b961946</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+            <sys_update_name>sys_ui_list_x_snc_8570_complia_8570_certification_sys_ref_list</sys_update_name>
+            <sys_updated_by>rommelrey.budhi</sys_updated_by>
+            <sys_updated_on>2019-12-10 14:40:26</sys_updated_on>
+            <sys_user/>
+            <view display_value="Reference List" name="sys_ref_list">68ab1061db210010da721b77489619aa</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

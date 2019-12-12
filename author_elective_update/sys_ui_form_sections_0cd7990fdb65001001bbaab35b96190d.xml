@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections action="DELETE" form_id="0cd7990fdb65001001bbaab35b96190d" sys_domain="global" table="x_snc_8570_complia_8570_candidate" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>rommelrey.budhi</sys_created_by>
+            <sys_created_on>2019-12-10 14:38:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d4d7d90fdb65001001bbaab35b9619b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_8570_complia_8570_candidate" name="x_snc_8570_complia_8570_candidate" sys_domain="global" view="Default view">0cd7990fdb65001001bbaab35b96190d</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_8570_complia_8570_candidate" sys_domain="global" view="Default view">6397d1cbdb65001001bbaab35b9619ae</sys_ui_section>
+            <sys_updated_by>rommelrey.budhi</sys_updated_by>
+            <sys_updated_on>2019-12-10 14:38:05</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>rommelrey.budhi</sys_created_by>
+            <sys_created_on>2019-12-10 14:38:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d0d7d90fdb65001001bbaab35b9619b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_8570_complia_8570_candidate" name="x_snc_8570_complia_8570_candidate" sys_domain="global" view="Default view">0cd7990fdb65001001bbaab35b96190d</sys_ui_form>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_snc_8570_complia_8570_candidate" sys_domain="global" view="Default view">48d7990fdb65001001bbaab35b96190c</sys_ui_section>
+            <sys_updated_by>rommelrey.budhi</sys_updated_by>
+            <sys_updated_on>2019-12-10 14:38:05</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_8570_complia_8570_candidate</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>rommelrey.budhi</sys_created_by>
+            <sys_created_on>2019-12-10 14:38:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0cd7990fdb65001001bbaab35b96190d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_8570_complia_8570_candidate</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="8570 Compliance Application" source="x_snc_8570_complia">422c81c7db25001001bbaab35b961946</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+            <sys_update_name>sys_ui_form_sections_0cd7990fdb65001001bbaab35b96190d</sys_update_name>
+            <sys_updated_by>rommelrey.budhi</sys_updated_by>
+            <sys_updated_on>2019-12-10 14:38:05</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</application>
+        <file_path/>
+        <instance_id>e5e28a694fa70e00e17199701310c71f</instance_id>
+        <instance_name>hackathon029</instance_name>
+        <name>sys_ui_form_sections_0cd7990fdb65001001bbaab35b96190d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_form_sections form_id="0cd7990fdb65001001bbaab35b96190d" sys_domain="global" table="x_snc_8570_complia_8570_candidate" version="3"><sys_ui_form_section action="INSERT_OR_UPDATE"><position>0</position><sys_created_by>rommelrey.budhi</sys_created_by><sys_created_on>2019-12-10 14:38:05</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d4d7d90fdb65001001bbaab35b9619b7</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_snc_8570_complia_8570_candidate" name="x_snc_8570_complia_8570_candidate" sys_domain="global" view="Default view">0cd7990fdb65001001bbaab35b96190d</sys_ui_form><sys_ui_section caption="NULL" display_value="" name="x_snc_8570_complia_8570_candidate" sys_domain="global" view="Default view">6397d1cbdb65001001bbaab35b9619ae</sys_ui_section><sys_updated_by>rommelrey.budhi</sys_updated_by><sys_updated_on>2019-12-10 14:38:05</sys_updated_on></sys_ui_form_section><sys_ui_form_section action="INSERT_OR_UPDATE"><position>1</position><sys_created_by>rommelrey.budhi</sys_created_by><sys_created_on>2019-12-10 14:38:05</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d0d7d90fdb65001001bbaab35b9619b8</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_snc_8570_complia_8570_candidate" name="x_snc_8570_complia_8570_candidate" sys_domain="global" view="Default view">0cd7990fdb65001001bbaab35b96190d</sys_ui_form><sys_ui_section caption="New Section" display_value="New Section" name="x_snc_8570_complia_8570_candidate" sys_domain="global" view="Default view">48d7990fdb65001001bbaab35b96190c</sys_ui_section><sys_updated_by>rommelrey.budhi</sys_updated_by><sys_updated_on>2019-12-10 14:38:05</sys_updated_on></sys_ui_form_section><sys_ui_form action="INSERT_OR_UPDATE"><name>x_snc_8570_complia_8570_candidate</name><roles/><sys_class_name>sys_ui_form</sys_class_name><sys_created_by>rommelrey.budhi</sys_created_by><sys_created_on>2019-12-10 14:38:05</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0cd7990fdb65001001bbaab35b96190d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_8570_complia_8570_candidate</sys_name><sys_overrides/><sys_package display_value="8570 Compliance Application" source="x_snc_8570_complia">422c81c7db25001001bbaab35b961946</sys_package><sys_policy/><sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope><sys_update_name>sys_ui_form_sections_0cd7990fdb65001001bbaab35b96190d</sys_update_name><sys_updated_by>rommelrey.budhi</sys_updated_by><sys_updated_on>2019-12-10 14:38:05</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_form></sys_ui_form_sections></record_update>]]></payload>
+        <payload_hash>2139009573</payload_hash>
+        <record_name>8570 Candidate</record_name>
+        <reverted_from/>
+        <source>1a2cc5cbdb25001001bbaab35b961997</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 14:38:05</sys_created_on>
+        <sys_id>9cd7d90fdb65001001bbaab35b9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16ef03eebd60000001</sys_recorded_at>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 14:38:05</sys_updated_on>
+        <type>Form Sections</type>
+        <update_guid>18d7d90f146500100e1bbfa9f76c1fb9</update_guid>
+        <update_guid_history>18d7d90f146500100e1bbfa9f76c1fb9:2139009573,44d7d90f50650010ad4e2cb8f701ccb6:-187224954</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 15:31:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_form">sys_ui_form</sys_db_object>
+        <sys_id>ccb87d3265e6438e8df7ec1fba036961</sys_id>
+        <sys_metadata>0cd7990fdb65001001bbaab35b96190d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_8570_complia_8570_candidate</sys_name>
+        <sys_package display_value="8570 Compliance Application" source="x_snc_8570_complia">422c81c7db25001001bbaab35b961946</sys_package>
+        <sys_parent display_value="">aaa09943db65001001bbaab35b961996</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_scope_delete display_value="">51ef42c7763e4d70bd5e626ca5c54840</sys_scope_delete>
+        <sys_update_name>sys_ui_form_sections_0cd7990fdb65001001bbaab35b96190d</sys_update_name>
+        <sys_update_version display_value="sys_ui_form_sections_0cd7990fdb65001001bbaab35b96190d">9cd7d90fdb65001001bbaab35b9619b9</sys_update_version>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 15:31:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

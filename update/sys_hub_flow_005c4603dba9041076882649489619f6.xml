@@ -1,0 +1,1543 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>First attempt to notify 8570 compliant users that their certification is about to expire</description>
+        <internal_name>8570__90_day__certification_expiration</internal_name>
+        <label_cache>[{"name":"f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.manager.email","label":"2➛8570 Candidate Record➛Candidate➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.email","label":"2➛8570 Candidate Record➛Candidate➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"1a9e1e65-1ab6-4cf1-ba82-df9a41c5614d.email","label":"2.1➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference"},{"name":"f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item","label":"2➛8570 Candidate Record","reference":"x_snc_8570_complia_8570_candidate","reference_display":"8570 Candidate","type":"reference","base_type":"reference"},{"name":"4ee7029e-cf3f-4d50-98a9-d2b5bcb9a6d6.Records","label":"1➛8570 Candidate Records","reference":"x_snc_8570_complia_8570_candidate","reference_display":"8570 Candidate","type":"records","base_type":"records"},{"name":"4ee7029e-cf3f-4d50-98a9-d2b5bcb9a6d6.Table","label":"1➛8570 Candidate Table","reference":"x_snc_8570_complia_8570_candidate","reference_display":"8570 Candidate","type":"table_name","base_type":"table_name"},{"name":"4ee7029e-cf3f-4d50-98a9-d2b5bcb9a6d6.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer"}]</label_cache>
+        <latest_snapshot>d7fcba83db2d001001bbaab35b9619de</latest_snapshot>
+        <master_snapshot>b3ad0a83dba904107688264948961933</master_snapshot>
+        <name>8570 - 90 day  Certification expiration</name>
+        <outputs/>
+        <remote_trigger_id>48bd0a83dba904107688264948961950</remote_trigger_id>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:27:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>005c4603dba9041076882649489619f6</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>8570 - 90 day  Certification expiration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="8570 Compliance Application" source="x_snc_8570_complia">422c81c7db25001001bbaab35b961946</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name>sys_hub_flow_005c4603dba9041076882649489619f6</sys_update_name>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:28</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=005c4603dba9041076882649489619f6"/>
+    <sys_variable_value action="delete_multiple" query="document_key=005c4603dba9041076882649489619f6"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period/>
+        <run_start>2019-12-10 18:33:28</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>48bd0a83dba904107688264948961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:28</sys_updated_on>
+        <time>1970-01-01 22:00:00</time>
+        <timer_type>11</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Trigger:48bd0a83dba904107688264948961950</name>
+        <run_as display_value="Rommelrey Budhi">2ba485c3db25001001bbaab35b96195e</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2019-12-10 18:33:28</run_start>
+        <run_time>1970-01-01 22:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('48bd0a83dba904107688264948961950');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:28</sys_created_on>
+        <sys_id>4cbd0a83dba904107688264948961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:28</sys_updated_on>
+        <trigger display_value="">48bd0a83dba904107688264948961950</trigger>
+        <upgrade_safe>false</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_hub_flow_component action="delete_multiple" query="flow=005c4603dba9041076882649489619f6^sys_idNOT IN1f9d8683dba90410768826494896193c,df9d8683dba904107688264948961938,f49c4643dba904107688264948961961"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">579d8683dba90410768826494896193c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="8570 - 90 day  Certification expiration">005c4603dba9041076882649489619f6</flow>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>1f9d8683dba90410768826494896193c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:28</sys_updated_on>
+        <ui_id>f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1f9d8683dba90410768826494896193c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>1f9d8683dba90410768826494896193c</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>5f9d8683dba90410768826494896193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <value>{{4ee7029e-cf3f-4d50-98a9-d2b5bcb9a6d6.Records}}</value>
+        <variable display_value="">19df9109c32632002841b63b12d3aed6</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="8570 - 90 day  Certification expiration">005c4603dba9041076882649489619f6</flow>
+        <order>2.1</order>
+        <parent_ui_id>f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>df9d8683dba904107688264948961938</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 22:00:08</sys_updated_on>
+        <ui_id>1a9e1e65-1ab6-4cf1-ba82-df9a41c5614d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=df9d8683dba904107688264948961938"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>df9d8683dba904107688264948961938</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>23adc683dba9041076882649489619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <value/>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>df9d8683dba904107688264948961938</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>539d8683dba90410768826494896193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <value>Your 8570 Compliance will expire within 90 days</value>
+        <variable display_value="">b21241160b100300d97d8bf637673a4a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>df9d8683dba904107688264948961938</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>9f9d8683dba90410768826494896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <value>x_snc_8570_complia_8570_candidate</value>
+        <variable display_value="">0b702bf4a70323008299b39f087901f6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>df9d8683dba904107688264948961938</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>a7adc683dba9041076882649489619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <value>Your 8570 Compliance will expire within 90 days</value>
+        <variable display_value="">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>df9d8683dba904107688264948961938</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>db9d8683dba90410768826494896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <value/>
+        <variable display_value="">c71241160b100300d97d8bf637673a55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>df9d8683dba904107688264948961938</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>e3adc683dba9041076882649489619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <value>x_snc_8570_complia_8570_candidate</value>
+        <variable display_value="">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=df9d8683dba904107688264948961938"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>5f9d8683dba90410768826494896193a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="6fe5e0bd-fdb8-4133-9c09-1c66a09a4362" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.first_name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="6fe5e0bd-fdb8-4133-9c09-1c66a09a4362" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.first_name}}"&gt;2➛8570 Candidate Record➛Candidate➛First name&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Our records indicate that either your&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Baseline&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="ad4fcd98-f262-4730-87d3-d23790c2ebcb" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.baseline_certification.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="ad4fcd98-f262-4730-87d3-d23790c2ebcb" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.baseline_certification.name}}"&gt;2➛8570 Candidate Record➛Baseline Certification➛Name&lt;/span&gt;&lt;/span&gt; Certification or your&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Computer Environment&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="52076eb7-458d-4ca1-b703-de9cf652aef7" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.ce_certification.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="52076eb7-458d-4ca1-b703-de9cf652aef7" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.ce_certification.name}}"&gt;2➛8570 Candidate Record➛CE Certification➛Name&lt;/span&gt;&lt;/span&gt; Certification will expire within 90 days. Please coordinate a time to re-certify for the certification that will elapse within 90 days.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Thank you,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;IA Management&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>a3adc683dba9041076882649489619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="6fe5e0bd-fdb8-4133-9c09-1c66a09a4362" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.first_name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="6fe5e0bd-fdb8-4133-9c09-1c66a09a4362" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.first_name}}"&gt;2➛8570 Candidate Record➛Candidate➛First name&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Our records indicate that either your&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Baseline&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="ad4fcd98-f262-4730-87d3-d23790c2ebcb" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.baseline_certification.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="ad4fcd98-f262-4730-87d3-d23790c2ebcb" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.baseline_certification.name}}"&gt;2➛8570 Candidate Record➛Baseline Certification➛Name&lt;/span&gt;&lt;/span&gt; Certification or your&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Computer Environment&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="52076eb7-458d-4ca1-b703-de9cf652aef7" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.ce_certification.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="52076eb7-458d-4ca1-b703-de9cf652aef7" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.ce_certification.name}}"&gt;2➛8570 Candidate Record➛CE Certification➛Name&lt;/span&gt;&lt;/span&gt; Certification will expire within 90 days. Please coordinate a time to re-certify for the certification that will elapse within 90 days.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Thank you,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;IA Management&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>5b9d8683dba90410768826494896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.manager.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>afadc683dba9041076882649489619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.manager.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>979d8683dba90410768826494896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>ebadc683dba9041076882649489619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>9b9d8683dba90410768826494896193a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>efadc683dba9041076882649489619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>139d8683dba90410768826494896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>67adc683dba9041076882649489619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>2badc683dba9041076882649489619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>d39d8683dba90410768826494896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="8570 - 90 day  Certification expiration">005c4603dba9041076882649489619f6</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:28:36</sys_created_on>
+        <sys_id>f49c4643dba904107688264948961961</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 22:00:07</sys_updated_on>
+        <ui_id>4ee7029e-cf3f-4d50-98a9-d2b5bcb9a6d6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f49c4643dba904107688264948961961"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f49c4643dba904107688264948961961</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>2badc683dba9041076882649489619f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <value>baseline_certification_expirationBETWEENjavascript:gs.beginningOfLast3Months()@javascript:gs.beginningOfLast3Months()^ORce_expirationBETWEENjavascript:gs.beginningOfLast3Months()@javascript:gs.beginningOfLast3Months()</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f49c4643dba904107688264948961961</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:28:36</sys_created_on>
+        <sys_id>389c4643dba904107688264948961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:28:36</sys_updated_on>
+        <value>x_snc_8570_complia_8570_candidate</value>
+        <variable display_value="">3807ee090b30030085c083eb37673a08</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f49c4643dba904107688264948961961</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:28:36</sys_created_on>
+        <sys_id>749c4643dba904107688264948961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:28:36</sys_updated_on>
+        <value>baseline_certification_expirationBETWEENjavascript:gs.beginningOfLast3Months()@javascript:gs.beginningOfLast3Months()^ORce_expirationBETWEENjavascript:gs.beginningOfLast3Months()@javascript:gs.beginningOfLast3Months()</value>
+        <variable display_value="">0507ee090b30030085c083eb37673a2e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f49c4643dba904107688264948961961</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>ebadc683dba9041076882649489619f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <value>x_snc_8570_complia_8570_candidate</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=005c4603dba9041076882649489619f6^sys_idNOT IN5b5cc243dba90410768826494896199c"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="8570 - 90 day  Certification expiration">005c4603dba9041076882649489619f6</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:27:40</sys_created_on>
+        <sys_id>5b5cc243dba90410768826494896199c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:28</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5b5cc243dba90410768826494896199c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>5b5cc243dba90410768826494896199c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:27:41</sys_created_on>
+        <sys_id>d35cc243dba90410768826494896199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:27:41</sys_updated_on>
+        <value>1970-01-01 14:00:00</value>
+        <variable display_value="">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=005c4603dba9041076882649489619f6^sys_idNOT IN805c4603dba9041076882649489619f7"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>005c4603dba9041076882649489619f6</id>
+        <name>8570 - 90 day  Certification expiration</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:27:27</sys_created_on>
+        <sys_id>805c4603dba9041076882649489619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:27:27</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="delete_multiple" query="flow=005c4603dba9041076882649489619f6^sys_idNOT INdf9d8683dba904107688264948961938,f49c4643dba904107688264948961961"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="8570 - 90 day  Certification expiration">005c4603dba9041076882649489619f6</flow>
+        <order>2.1</order>
+        <parent_ui_id>f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>df9d8683dba904107688264948961938</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 22:00:08</sys_updated_on>
+        <ui_id>1a9e1e65-1ab6-4cf1-ba82-df9a41c5614d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=df9d8683dba904107688264948961938"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>df9d8683dba904107688264948961938</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>23adc683dba9041076882649489619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <value/>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>df9d8683dba904107688264948961938</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>539d8683dba90410768826494896193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <value>Your 8570 Compliance will expire within 90 days</value>
+        <variable display_value="">b21241160b100300d97d8bf637673a4a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>df9d8683dba904107688264948961938</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>9f9d8683dba90410768826494896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <value>x_snc_8570_complia_8570_candidate</value>
+        <variable display_value="">0b702bf4a70323008299b39f087901f6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>df9d8683dba904107688264948961938</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>a7adc683dba9041076882649489619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <value>Your 8570 Compliance will expire within 90 days</value>
+        <variable display_value="">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>df9d8683dba904107688264948961938</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>db9d8683dba90410768826494896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <value/>
+        <variable display_value="">c71241160b100300d97d8bf637673a55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>df9d8683dba904107688264948961938</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>e3adc683dba9041076882649489619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <value>x_snc_8570_complia_8570_candidate</value>
+        <variable display_value="">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=df9d8683dba904107688264948961938"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>5f9d8683dba90410768826494896193a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="6fe5e0bd-fdb8-4133-9c09-1c66a09a4362" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.first_name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="6fe5e0bd-fdb8-4133-9c09-1c66a09a4362" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.first_name}}"&gt;2➛8570 Candidate Record➛Candidate➛First name&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Our records indicate that either your&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Baseline&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="ad4fcd98-f262-4730-87d3-d23790c2ebcb" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.baseline_certification.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="ad4fcd98-f262-4730-87d3-d23790c2ebcb" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.baseline_certification.name}}"&gt;2➛8570 Candidate Record➛Baseline Certification➛Name&lt;/span&gt;&lt;/span&gt; Certification or your&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Computer Environment&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="52076eb7-458d-4ca1-b703-de9cf652aef7" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.ce_certification.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="52076eb7-458d-4ca1-b703-de9cf652aef7" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.ce_certification.name}}"&gt;2➛8570 Candidate Record➛CE Certification➛Name&lt;/span&gt;&lt;/span&gt; Certification will expire within 90 days. Please coordinate a time to re-certify for the certification that will elapse within 90 days.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Thank you,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;IA Management&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>a3adc683dba9041076882649489619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="6fe5e0bd-fdb8-4133-9c09-1c66a09a4362" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.first_name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="6fe5e0bd-fdb8-4133-9c09-1c66a09a4362" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.first_name}}"&gt;2➛8570 Candidate Record➛Candidate➛First name&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Our records indicate that either your&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Baseline&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="ad4fcd98-f262-4730-87d3-d23790c2ebcb" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.baseline_certification.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="ad4fcd98-f262-4730-87d3-d23790c2ebcb" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.baseline_certification.name}}"&gt;2➛8570 Candidate Record➛Baseline Certification➛Name&lt;/span&gt;&lt;/span&gt; Certification or your&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Computer Environment&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="52076eb7-458d-4ca1-b703-de9cf652aef7" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.ce_certification.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="52076eb7-458d-4ca1-b703-de9cf652aef7" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.ce_certification.name}}"&gt;2➛8570 Candidate Record➛CE Certification➛Name&lt;/span&gt;&lt;/span&gt; Certification will expire within 90 days. Please coordinate a time to re-certify for the certification that will elapse within 90 days.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Thank you,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;IA Management&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>5b9d8683dba90410768826494896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.manager.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>afadc683dba9041076882649489619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.manager.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>979d8683dba90410768826494896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>ebadc683dba9041076882649489619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>9b9d8683dba90410768826494896193a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>efadc683dba9041076882649489619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>139d8683dba90410768826494896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>67adc683dba9041076882649489619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>2badc683dba9041076882649489619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>df9d8683dba904107688264948961938</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>d39d8683dba90410768826494896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_98c181d20b100300d97d8bf637673ab5</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="8570 - 90 day  Certification expiration">005c4603dba9041076882649489619f6</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:28:36</sys_created_on>
+        <sys_id>f49c4643dba904107688264948961961</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 22:00:07</sys_updated_on>
+        <ui_id>4ee7029e-cf3f-4d50-98a9-d2b5bcb9a6d6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f49c4643dba904107688264948961961"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f49c4643dba904107688264948961961</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>2badc683dba9041076882649489619f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <value>baseline_certification_expirationBETWEENjavascript:gs.beginningOfLast3Months()@javascript:gs.beginningOfLast3Months()^ORce_expirationBETWEENjavascript:gs.beginningOfLast3Months()@javascript:gs.beginningOfLast3Months()</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f49c4643dba904107688264948961961</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:28:36</sys_created_on>
+        <sys_id>389c4643dba904107688264948961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:28:36</sys_updated_on>
+        <value>x_snc_8570_complia_8570_candidate</value>
+        <variable display_value="">3807ee090b30030085c083eb37673a08</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f49c4643dba904107688264948961961</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:28:36</sys_created_on>
+        <sys_id>749c4643dba904107688264948961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:28:36</sys_updated_on>
+        <value>baseline_certification_expirationBETWEENjavascript:gs.beginningOfLast3Months()@javascript:gs.beginningOfLast3Months()^ORce_expirationBETWEENjavascript:gs.beginningOfLast3Months()@javascript:gs.beginningOfLast3Months()</value>
+        <variable display_value="">0507ee090b30030085c083eb37673a2e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f49c4643dba904107688264948961961</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:26</sys_created_on>
+        <sys_id>ebadc683dba9041076882649489619f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:26</sys_updated_on>
+        <value>x_snc_8570_complia_8570_candidate</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=005c4603dba9041076882649489619f6^sys_idNOT IN1f9d8683dba90410768826494896193c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">579d8683dba90410768826494896193c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="8570 - 90 day  Certification expiration">005c4603dba9041076882649489619f6</flow>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>1f9d8683dba90410768826494896193c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:28</sys_updated_on>
+        <ui_id>f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1f9d8683dba90410768826494896193c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>1f9d8683dba90410768826494896193c</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:08</sys_created_on>
+        <sys_id>5f9d8683dba90410768826494896193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:08</sys_updated_on>
+        <value>{{4ee7029e-cf3f-4d50-98a9-d2b5bcb9a6d6.Records}}</value>
+        <variable display_value="">19df9109c32632002841b63b12d3aed6</variable>
+    </sys_variable_value>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=005c4603dba9041076882649489619f6^sys_idNOT INc0bd0a83dba904107688264948961952"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"c0bd0a83dba904107688264948961952","name":"plan"}}</plan>
+        <plan_id>005c4603dba9041076882649489619f6</plan_id>
+        <snapshot>d7fcba83db2d001001bbaab35b9619de</snapshot>
+        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c0bd0a83dba904107688264948961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:28</sys_updated_on>
+        <trigger display_value="">48bd0a83dba904107688264948961950</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>First attempt to notify 8570 compliant users that their certification is about to expire</description>
+        <internal_name>8570__90_day__certification_expiration</internal_name>
+        <label_cache>[{"name":"f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.manager.email","label":"2➛8570 Candidate Record➛Candidate➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.email","label":"2➛8570 Candidate Record➛Candidate➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"1a9e1e65-1ab6-4cf1-ba82-df9a41c5614d.email","label":"2.1➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference"},{"name":"f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item","label":"2➛8570 Candidate Record","reference":"x_snc_8570_complia_8570_candidate","reference_display":"8570 Candidate","type":"reference","base_type":"reference"},{"name":"4ee7029e-cf3f-4d50-98a9-d2b5bcb9a6d6.Records","label":"1➛8570 Candidate Records","reference":"x_snc_8570_complia_8570_candidate","reference_display":"8570 Candidate","type":"records","base_type":"records"},{"name":"4ee7029e-cf3f-4d50-98a9-d2b5bcb9a6d6.Table","label":"1➛8570 Candidate Table","reference":"x_snc_8570_complia_8570_candidate","reference_display":"8570 Candidate","type":"table_name","base_type":"table_name"},{"name":"4ee7029e-cf3f-4d50-98a9-d2b5bcb9a6d6.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer"}]</label_cache>
+        <master>true</master>
+        <name>8570 - 90 day  Certification expiration</name>
+        <outputs/>
+        <parent_flow display_value="8570 - 90 day  Certification expiration">005c4603dba9041076882649489619f6</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b3ad0a83dba904107688264948961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=b3ad0a83dba904107688264948961933"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b3ad0a83dba904107688264948961933"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=b3ad0a83dba904107688264948961933^sys_idNOT IN80bd0a83dba90410768826494896193e,ccbd0a83dba904107688264948961939,f7ad0a83dba904107688264948961936"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="8570 - 90 day  Certification expiration">b3ad0a83dba904107688264948961933</flow>
+        <order>2.1</order>
+        <parent_ui_id>f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>80bd0a83dba90410768826494896193e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <ui_id>1a9e1e65-1ab6-4cf1-ba82-df9a41c5614d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=80bd0a83dba90410768826494896193e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>80bd0a83dba90410768826494896193e</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>04bd0a83dba904107688264948961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <value>Your 8570 Compliance will expire within 90 days</value>
+        <variable display_value="">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>80bd0a83dba90410768826494896193e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>40bd0a83dba904107688264948961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <value>x_snc_8570_complia_8570_candidate</value>
+        <variable display_value="">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>80bd0a83dba90410768826494896193e</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>8cbd0a83dba904107688264948961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <value/>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=80bd0a83dba90410768826494896193e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>80bd0a83dba90410768826494896193e</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>00bd0a83dba904107688264948961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="6fe5e0bd-fdb8-4133-9c09-1c66a09a4362" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.first_name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="6fe5e0bd-fdb8-4133-9c09-1c66a09a4362" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.first_name}}"&gt;2➛8570 Candidate Record➛Candidate➛First name&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Our records indicate that either your&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Baseline&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="ad4fcd98-f262-4730-87d3-d23790c2ebcb" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.baseline_certification.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="ad4fcd98-f262-4730-87d3-d23790c2ebcb" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.baseline_certification.name}}"&gt;2➛8570 Candidate Record➛Baseline Certification➛Name&lt;/span&gt;&lt;/span&gt; Certification or your&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Computer Environment&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="52076eb7-458d-4ca1-b703-de9cf652aef7" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.ce_certification.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="52076eb7-458d-4ca1-b703-de9cf652aef7" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.ce_certification.name}}"&gt;2➛8570 Candidate Record➛CE Certification➛Name&lt;/span&gt;&lt;/span&gt; Certification will expire within 90 days. Please coordinate a time to re-certify for the certification that will elapse within 90 days.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Thank you,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;IA Management&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>80bd0a83dba90410768826494896193e</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>0cbd0a83dba904107688264948961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.manager.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>80bd0a83dba90410768826494896193e</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>48bd0a83dba904107688264948961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>80bd0a83dba90410768826494896193e</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>4cbd0a83dba90410768826494896193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>80bd0a83dba90410768826494896193e</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>c0bd0a83dba904107688264948961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>80bd0a83dba90410768826494896193e</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>84bd0a83dba904107688264948961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="8570 - 90 day  Certification expiration">b3ad0a83dba904107688264948961933</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>ccbd0a83dba904107688264948961939</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <ui_id>4ee7029e-cf3f-4d50-98a9-d2b5bcb9a6d6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ccbd0a83dba904107688264948961939"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ccbd0a83dba904107688264948961939</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>0cbd0a83dba90410768826494896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <value>x_snc_8570_complia_8570_candidate</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ccbd0a83dba904107688264948961939</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>48bd0a83dba90410768826494896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <value>baseline_certification_expirationBETWEENjavascript:gs.beginningOfLast3Months()@javascript:gs.beginningOfLast3Months()^ORce_expirationBETWEENjavascript:gs.beginningOfLast3Months()@javascript:gs.beginningOfLast3Months()</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">579d8683dba90410768826494896193c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="8570 - 90 day  Certification expiration">b3ad0a83dba904107688264948961933</flow>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>f7ad0a83dba904107688264948961936</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <ui_id>f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f7ad0a83dba904107688264948961936"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>f7ad0a83dba904107688264948961936</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>3bad0a83dba904107688264948961937</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <value>{{4ee7029e-cf3f-4d50-98a9-d2b5bcb9a6d6.Records}}</value>
+        <variable display_value="">19df9109c32632002841b63b12d3aed6</variable>
+    </sys_variable_value>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=b3ad0a83dba904107688264948961933^sys_idNOT IN08bd0a83dba904107688264948961941"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="8570 - 90 day  Certification expiration">b3ad0a83dba904107688264948961933</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>08bd0a83dba904107688264948961941</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:28</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=08bd0a83dba904107688264948961941"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>08bd0a83dba904107688264948961941</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>8cbd0a83dba904107688264948961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <value>1970-01-01 14:00:00</value>
+        <variable display_value="">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b3ad0a83dba904107688264948961933^sys_idNOT INbbad0a83dba904107688264948961933"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b3ad0a83dba904107688264948961933</id>
+        <name>8570 - 90 day  Certification expiration</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>bbad0a83dba904107688264948961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="delete_multiple" query="flow=b3ad0a83dba904107688264948961933^sys_idNOT IN80bd0a83dba90410768826494896193e,ccbd0a83dba904107688264948961939"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="8570 - 90 day  Certification expiration">b3ad0a83dba904107688264948961933</flow>
+        <order>2.1</order>
+        <parent_ui_id>f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>80bd0a83dba90410768826494896193e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <ui_id>1a9e1e65-1ab6-4cf1-ba82-df9a41c5614d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=80bd0a83dba90410768826494896193e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>80bd0a83dba90410768826494896193e</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>04bd0a83dba904107688264948961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <value>Your 8570 Compliance will expire within 90 days</value>
+        <variable display_value="">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>80bd0a83dba90410768826494896193e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>40bd0a83dba904107688264948961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <value>x_snc_8570_complia_8570_candidate</value>
+        <variable display_value="">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>80bd0a83dba90410768826494896193e</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>8cbd0a83dba904107688264948961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <value/>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=80bd0a83dba90410768826494896193e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>80bd0a83dba90410768826494896193e</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>00bd0a83dba904107688264948961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Dear&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="6fe5e0bd-fdb8-4133-9c09-1c66a09a4362" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.first_name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="6fe5e0bd-fdb8-4133-9c09-1c66a09a4362" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.first_name}}"&gt;2➛8570 Candidate Record➛Candidate➛First name&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Our records indicate that either your&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Baseline&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="ad4fcd98-f262-4730-87d3-d23790c2ebcb" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.baseline_certification.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="ad4fcd98-f262-4730-87d3-d23790c2ebcb" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.baseline_certification.name}}"&gt;2➛8570 Candidate Record➛Baseline Certification➛Name&lt;/span&gt;&lt;/span&gt; Certification or your&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Computer Environment&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillid="52076eb7-458d-4ca1-b703-de9cf652aef7" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.ce_certification.name}}"&gt;&lt;span class="data_pill " contenteditable="false" data-pillid="52076eb7-458d-4ca1-b703-de9cf652aef7" data-pillvalue="{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.ce_certification.name}}"&gt;2➛8570 Candidate Record➛CE Certification➛Name&lt;/span&gt;&lt;/span&gt; Certification will expire within 90 days. Please coordinate a time to re-certify for the certification that will elapse within 90 days.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Thank you,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;IA Management&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>80bd0a83dba90410768826494896193e</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>0cbd0a83dba904107688264948961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.manager.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>80bd0a83dba90410768826494896193e</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>48bd0a83dba904107688264948961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>80bd0a83dba90410768826494896193e</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>4cbd0a83dba90410768826494896193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item.candidate.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>80bd0a83dba90410768826494896193e</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>c0bd0a83dba904107688264948961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>80bd0a83dba90410768826494896193e</id>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>84bd0a83dba904107688264948961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="8570 - 90 day  Certification expiration">b3ad0a83dba904107688264948961933</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>ccbd0a83dba904107688264948961939</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <ui_id>4ee7029e-cf3f-4d50-98a9-d2b5bcb9a6d6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ccbd0a83dba904107688264948961939"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ccbd0a83dba904107688264948961939</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>0cbd0a83dba90410768826494896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <value>x_snc_8570_complia_8570_candidate</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ccbd0a83dba904107688264948961939</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>48bd0a83dba90410768826494896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <value>baseline_certification_expirationBETWEENjavascript:gs.beginningOfLast3Months()@javascript:gs.beginningOfLast3Months()^ORce_expirationBETWEENjavascript:gs.beginningOfLast3Months()@javascript:gs.beginningOfLast3Months()</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=b3ad0a83dba904107688264948961933^sys_idNOT INf7ad0a83dba904107688264948961936"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">579d8683dba90410768826494896193c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="8570 - 90 day  Certification expiration">b3ad0a83dba904107688264948961933</flow>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>f7ad0a83dba904107688264948961936</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="8570 Compliance Application">422c81c7db25001001bbaab35b961946</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <ui_id>f01d8bc2-1449-499d-a13d-4fe7dcd4bdf4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f7ad0a83dba904107688264948961936"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>f7ad0a83dba904107688264948961936</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>rommelrey.budhi</sys_created_by>
+        <sys_created_on>2019-12-10 18:33:27</sys_created_on>
+        <sys_id>3bad0a83dba904107688264948961937</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rommelrey.budhi</sys_updated_by>
+        <sys_updated_on>2019-12-10 18:33:27</sys_updated_on>
+        <value>{{4ee7029e-cf3f-4d50-98a9-d2b5bcb9a6d6.Records}}</value>
+        <variable display_value="">19df9109c32632002841b63b12d3aed6</variable>
+    </sys_variable_value>
+</record_update>

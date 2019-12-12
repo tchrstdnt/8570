@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="8570 Candidate" max_length="40" name="x_snc_8570_complia_8570_candidate" sizeclass="7" type="collection">
+        <element label="Baseline Certificate" max_length="40" name="baseline_certificate" type="file_attachment"/>
+        <element label="Baseline Certification" mandatory="true" max_length="32" name="baseline_certification" reference="x_snc_8570_complia_8570_certification" reference_qual="certification_type=Baseline^EQ" reference_qual_condition="certification_type=Baseline^EQ" type="reference"/>
+        <element label="Baseline Certification Expiration" mandatory="true" max_length="40" name="baseline_certification_expiration" type="glide_date"/>
+        <element label="Candidate" mandatory="true" max_length="32" name="candidate" reference="sys_user" type="reference"/>
+        <element label="CE Certificate" max_length="40" name="ce_certificate" type="file_attachment"/>
+        <element label="CE Certification" mandatory="true" max_length="32" name="ce_certification" reference="x_snc_8570_complia_8570_certification" reference_qual="certification_type=CE^EQ" reference_qual_condition="certification_type=CE^EQ" type="reference"/>
+        <element label="CE Expiration" mandatory="true" max_length="40" name="ce_expiration" type="glide_date"/>
+        <element choice="1" default="IAT Level 2" label="IAT Level" mandatory="true" max_length="40" name="iat_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="IAT Level 1" value="IAT Level 1"/>
+                <element inactive_on_update="false" label="IAT Level 2" value="IAT Level 2"/>
+                <element inactive_on_update="false" label="IAT Level 3" value="IAT Level 3"/>
+            </choice>
+        </element>
+    </element>
+</database>

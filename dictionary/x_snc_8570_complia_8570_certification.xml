@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="8570 Certification" max_length="40" name="x_snc_8570_complia_8570_certification" type="collection">
+        <element choice="3" default="Baseline" label="Certification Type" max_length="40" name="certification_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Baseline" value="Baseline"/>
+                <element inactive_on_update="false" label="Computer Environment" value="CE"/>
+            </choice>
+        </element>
+        <element choice="1" default="IAT Level 1" label="IAT Level" max_length="40" name="iat_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="IAT Level 1" value="IAT Level 1"/>
+                <element inactive_on_update="false" label="IAT Level 2" value="IAT Level 2"/>
+                <element inactive_on_update="false" label="IAT Level 3" value="IAT Level 3"/>
+            </choice>
+        </element>
+        <element display="true" label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element label="Vendor" mandatory="true" max_length="40" name="vendor" type="string"/>
+    </element>
+</database>
